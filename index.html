@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NazwaTwojejMarki - Premium Czepki Pływackie</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        basen: '#0a192f',
+                        neonCyan: '#00f2fe',
+                        neonBlue: '#4facfe'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-basen text-gray-100 font-sans antialiased">
+
+    <!-- NAV BAR -->
+    <nav class="p-6 max-w-7xl mx-auto flex justify-between items-center border-b border-gray-800">
+        <div class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-neonBlue to-neonCyan">
+            czepki<span class="text-white">.pl</span>
+        </div>
+        <a href="#zamowienie" class="bg-gradient-to-r from-neonBlue to-neonCyan text-basen font-bold px-5 py-2 rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_15px_rgba(0,242,254,0.3)]">
+            Zamów MVP Edition
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center gap-12">
+        <!-- Lewa strona: Tekst -->
+        <div class="flex-1 space-y-6 text-center md:text-left">
+            <span class="inline-block text-xs font-bold uppercase tracking-widest bg-gray-800 text-neonCyan px-3 py-1 rounded-full border border-neonCyan/30">
+                Premiera Limitowanej Serii v1.0
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                tekst <br class="hidden sm:inline">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-neonBlue">
+                    tekst.
+                </span>
+            </h1>
+            <p class="text-gray-400 text-lg max-w-xl mx-auto md:mx-0">
+                Stworzony przez zawodowców dla zawodowców. 100% czystego, grubego silikonu, idealne hydro dynamiczne dopasowanie i wzór, który sprawi, że rywale z toru obok zapomną jak się robi nawrót.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                <a href="#zamowienie" class="bg-gradient-to-r from-neonBlue to-neonCyan text-basen text-center font-extrabold px-8 py-4 rounded-xl text-lg hover:shadow-[0_0_25px_rgba(0,242,254,0.5)] transition-all duration-300">
+                    Chcę Ten Czepek – 49 zł
+                </a>
+                <a href="#cechy" class="border border-gray-700 hover:border-neonCyan text-center px-8 py-4 rounded-xl font-medium transition-colors">
+                    Sprawdź specyfikację
+                </a>
+            </div>
+        </div>
+
+        <!-- Prawa strona: Zdjęcie Produktu -->
+        <div class="flex-1 relative w-full max-w-md md:max-w-none flex justify-center">
+            <!-- Neonowy blask w tle obrazka -->
+            <div class="absolute inset-0 bg-gradient-to-r from-neonBlue to-neonCyan rounded-full filter blur-[80px] opacity-20 w-72 h-72 m-auto"></div>
+            
+            <!-- placeholder na zdjęcie czepka kolegi -->
+            <div class="relative bg-gradient-to-b from-gray-800 to-gray-900 border border-gray-700 w-full aspect-square max-w-[400px] rounded-3xl flex flex-col items-center justify-center p-8 shadow-2xl group hover:border-neonCyan transition-colors duration-500">
+                <span class="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">🏊‍♂️</span>
+                <p class="text-center font-bold text-xl text-gray-200">tu bedzie grafika czepka</p>
+                <p class="text-xs text-gray-500 mt-2 text-center">Wymiary sugerowane: 800x800px (bez tła - PNG)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CECHY PRODUKTU -->
+    <section id="cechy" class="bg-gray-900/50 border-y border-gray-800 py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Zaprojektowany do ciężkich treningów</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-basen p-6 rounded-2xl border border-gray-800">
+                    <div class="text-neonCyan text-3xl mb-4">🧬</div>
+                    <h3 class="text-xl font-bold mb-2">Silikon Premium (Anti-Tear)</h3>
+                    <p class="text-gray-400 text-sm">Gruby, odporny na rozciąganie materiał. Zapomnij o pękaniu czepka przy szybkim zakładaniu na zawodach.</p>
+                </div>
+                <div class="bg-basen p-6 rounded-2xl border border-gray-800">
+                    <div class="text-neonCyan text-3xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold mb-2">Zero zmarszczek, zero oporów</h3>
+                    <p class="text-gray-400 text-sm">Specjalny profil eliminuje fałdy materiału. Maksymalna opływowość podczas kluczowej fazy podwodnej.</p>
+                </div>
+                <div class="bg-basen p-6 rounded-2xl border border-gray-800">
+                    <div class="text-neonCyan text-3xl mb-4">🎭</div>
+                    <h3 class="text-xl font-bold mb-2">Psychologiczna przewaga</h3>
+                    <p class="text-gray-400 text-sm">Unikalny, młodzieżowy wzór z humorem wyróżnia Cię na słupku i buduje mentalny luz przed startem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARZ ZAMÓWIENIA -->
+    <section id="zamowienie" class="max-w-3xl mx-auto px-6 py-20">
+        <div class="bg-gradient-to-b from-gray-900 to-basen border border-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl">
+            <h2 class="text-3xl font-extrabold text-center mb-2">Zamów limitowaną sztukę v1.0</h2>
+            <p class="text-center text-gray-400 mb-8 text-sm">Po wysłaniu formularza otrzymasz maila potwierdzającego oraz dane do płatności BLIK/Przelew. Paczkę nadajemy w ciągu 24h.</p>
+            
+            <!-- Formularz zintegrowany z Formspree -->
+            <form action="https://formspree.io/f/xzdwegzl" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Imię i Nazwisko</label>
+                    <input type="text" name="name" required class="w-full bg-basen border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-neonCyan text-white transition-colors">
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Adres E-mail</label>
+                        <input type="email" name="email" required class="w-full bg-basen border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-neonCyan text-white transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Numer Telefonu</label>
+                        <input type="tel" name="phone" required class="w-full bg-basen border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-neonCyan text-white transition-colors">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Kod Paczkomatu InPost i Twoje Miasto</label>
+                    <input type="text" name="paczkomat" placeholder="np. KRA01M, Kraków ul. Długa 5" required class="w-full bg-basen border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-neonCyan text-white transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Preferowana forma płatności</label>
+                    <select name="payment_method" class="w-full bg-basen border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-neonCyan text-white transition-colors">
+                        <option value="blik">Kod BLIK (Szybka wysyłka)</option>
+                        <option value="przelew">Tradycyjny przelew bankowy</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="w-full bg-gradient-to-r from-neonBlue to-neonCyan text-basen font-black py-4 rounded-xl text-lg hover:shadow-[0_0_30px_rgba(0,242,254,0.4)] transition-all duration-300 transform active:scale-95">
+                    Potwierdzam zamówienie (49 zł)
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-8 text-xs text-gray-600 border-t border-gray-950">
+        <p>&copy; 2026 czepki.pl. Wszelkie prawa zastrzeżone. Strona stworzona pro bono na darmowym stacku technologicznym.</p>
+    </footer>
+
+</body>
+</html>
